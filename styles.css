@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    background: #252525;
+    font-family: Montserrat;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 140px;
+   
+    align-items: center;
+}
+
+#zappi-logo {
+width: 76px;
+height: 79px;
+left: 65px;
+top: 31px;
+translate: 65px;
+}
+
+#home-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 14.5px;
+    width: 19px;
+    height: 20px ;
+    translate: 1181.5px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#cart-icon {
+    display: flex;
+    flex-direction: row;
+    translate: 1323px;
+    width: 28px;
+    height: 26px;   
+}
+
+#cart-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 13px;
+height: 13px;
+background: #FF4B4B;
+border: 1px solid #FFFFFF;
+border-radius: 13px;
+position: absolute;
+translate: 15px -5.49px; 
+font-weight: 400;
+font-size: 9px;
+text-align: center;
+color: #FFFFFF;
+}
+
+#profile-icon {
+    width: 15.99px;
+    height: 20px;
+    translate: 1403px;
+}
