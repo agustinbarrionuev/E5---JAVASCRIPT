@@ -191,16 +191,43 @@ line-height: 29px;
 color: #FFFFFF;
 }
 
+.mas-populares-container {
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: row;
+    width: 1117px;
+    height: 304px;
+    /* translate: 187px; */
+    margin-top: 30px;
+}
+
+.mas-populares-card {
+position: relative;
+width: 20%;
+height: 213px;
+
+background: #252525;
+box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+border-radius: 15px;
+
+}
+
 .recommended-card-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 1117px;
-    height: 104px;
+    height: 304px;
     /* translate: 187px; */
     margin-top: 30px;
 }
+
+
+
+
+
 
 .recommended-card {
  width: 347px;
