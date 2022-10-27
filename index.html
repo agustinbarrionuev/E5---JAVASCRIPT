@@ -1,314 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAPPI</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="./images/navbar/nucbazappiicon 1.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <title>NUCBAZAPPI</title>
 </head>
 <body>
-<header class="section-container">
-<nav class="navbar">
-    <div id="zappi-logo">
-        <img src="./images/navbar/nucbazappiicon 1.png" alt="Zappi-Logo">
-    </div>
-    <div id="home-icon">
-       <a href=""><img src="./images/navbar/Home.png" alt="Home"></a> 
-        <p>Home</p>
-    </div>
-    <div id="cart-icon">
-       <a href=""> <img src="./images/navbar/Buy.png" alt="Cart-Icon"></a>
-        <div id="cart-circle">
-            <p></p>
+  <header class="header">
+    <nav class="nav container">
+      <img class="nav__img" src="img/nucbazappiicon.png" />
+      <div class="nav__menu">
+        <a class="nav__link" href="index.html"><img src="img/Home.png" />Home</a>
+        <a class="nav__link" href="#"><img src="img/carrito.png" id="open" /></a>
+        <a class="nav__link" href="#"><img src="img/Profile.png" /></a>
+        <div class="overlay"></div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-container">
+    <div class="hero container ">
+      <div class="info">
+        <h1 class="info__h1">Si tenes Zappi,</h1>
+        <h3 class="info__h3">tenes Nucba.</h3>
+        <p class="info__p">
+          Buscá lo que quieras y nucba te quedes sin comida.
+        </p>
+        <a href="#productos">
+          <button class="info__button">VER MÁS</button>
+        </a>
+      </div>
+      <div class="images">
+        <div class="images__1">
+          <img src="./img/pizza1.png" alt="Pizza " />
         </div>
-    </div>
-    <div id="profile-icon">
-        <a href=""><img src="./images/navbar/Profile.png" alt="Profile-Icon"></a>
-    </div>
-</nav>
-<div class="tittle-pizza-container">
-    <div class="tittle-container">
-        <h1 id="h1">Si tenes Zappi,</h1>
-        <h2 id="h2">tenes Nucba.</h2>
-        <h3 id="h3">Buscá lo que quieras y nucba te quedes sin comida.</h3>
-        <button id="ver-mas">VER MÀS</button>
-    </div>
-    <div class="pizza-container">
-        <img id="image34" src="./images/header/image 34.png" alt="pizza">
-        <img id="pizza1" src="./images/header/pizza 1.png" alt="pizza">
-    </div>
-</div>
-</header>
-<main class="section-container">
-    <section class="recommended-section">
-        <div class="recommended-tittle-container">
-            <h2 id="recommended-tittle">Hoy te recomendamos</h2>
+        <div class="images__2">
+          <img src="./img/pizza2.png" alt="Pizza " />
         </div>
-        <div class="recommended-card-container">
-            <div class="recommended-card">
-                <img src="./images/recommended/Bennazianna.png" alt="Recommended-Product">
-                <div class="description-container">
-                    <h3 class="tittle-recommended-card">Bennazianna</h3>
-                    <p class="description-recommended-card">La más completa</p>
-                    <p class="price-recommended-card">$ 3650</p>
-                </div>
-                <button class="add-btn">Agregar</button>
-            </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="recommended container">
+    <h2 class="recommended__title">Hoy te recomendamos</h2>
+    <div class="recommended__cards">
+      <!-- <div class="card box-shadow">
+        <img class="card__img--recommended" src="./img/la-maradona.png" alt="pizza recomendada" />
+        <div class="card__info">
+          <p class="card__name">La Maradona</p>
+          <p class="card__description">¡Eterna!</p>
+          <p class="card__price gradient-text">$ 450</p>
+        </div>
+        <button class="btn btn--add">Agregar</button>
+      </div>
+      <div class="card box-shadow">
+        <img class="card__img--recommended" src="./img/bacon.jpg" alt="pizza recomendada" />
+        <div class="card__info">
+          <p class="card__name">Mega-Bacon</p>
+          <p class="card__description">¡Ahora con más!</p>
+          <p class="card__price gradient-text">$ 380</p>
+        </div>
+        <button class="btn btn--add">Agregar</button>
+      </div>
+      <div class="card box-shadow">
+        <img class="card__img--recommended" src="./img/papas-god.jpg" alt="pizza recomendada" />
+        <div class="card__info">
+          <p class="card__name">Papas God</p>
+          <p class="card__description">Las mejores</p>
+          <p class="card__price gradient-text">$ 300</p>
+        </div>
+        <button class="btn btn--add">Agregar</button>
+      </div> -->
+    </div>
+  </section>
+  <section class="categories container">
+    <h2 class="categories__title">Categorias</h2>
+    <div class="categories__cards">
+      <div class="card card--category box-shadow active">
+        <img class="card__icon" src="./images/categories/pizza 2.png" alt="Foto de categoria" />
+        <p class="card__name">Populares</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="pizzas">
+        <img class="card__icon" src="./images/categories/image 34 (1).png" data-category="pizzas" alt="Foto de categoria" />
+        <p class="card__name" data-category="pizzas">Pizzas</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="burgers">
+        <img class="card__icon" src="./img/hamburguesas.png" data-category="burgers" alt="Foto de categoria" />
+        <p class="card__name" data-category="hamburguesas">Hamburguesas</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="papas">
+        <img class="card__icon" src="./img/napapuki.png" data-category="papas" alt="Foto de categoria" />
+        <p class="card__name" data-category="papas">Napapuki</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="wraps">
+        <img class="card__icon" src="./img/wraps.png" data-category="wraps" alt="Foto de categoria" />
+        <p class="card__name" data-category="wraps">Wraps</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="mex-food">
+        <img class="card__icon" src="./img/mex-food.png" data-category="mex-food" alt="Foto de categoria" />
+        <p class="card__name" data-category="mex-food">Mexican Food</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="batidos">
+        <img class="card__icon" src="./img/batidos.png" data-category="batidos" alt="Foto de categoria" />
+        <p class="card__name" data-category="batidos">Batidos</p>
+        <div class="line-gradient"></div>
+      </div>
+    </div>
+  </section>
+  <main class="pizzas container">
+    <h2 class="pizzas__title">Las mas populares</h2>
+    <div class="pizzas__cards" id="productos">
+      <!-- Card a renderizar  -->
+      <!-- <div class="card card--pizza">
+        <img class="card__img" src="/img/la-mr-pit.png" alt="pizza popular">
+        <div class="card__container-info">
+          <div class="card__info">
+            <p class="card__name">Bennzianna</p>
+            <p class="card__description">La mas completa</p>
+            <p class="card__price gradient-text">$ 3650</p>
+          </div>
+          <button class="btn">Agregar</button>
+        </div>
+      </div> -->
+    </div>
+  </main>
+  <footer class="footer container">
+    <div class="footer__links">
+      <a class="footer__a" href="">Términos de Uso</a>
+      <a class="footer__a" href="">Trabajá con Nosotros</a>
+      <a class="footer__a" href="">Soporte</a>
+    </div>
+    <p class="footer__p">
+      Hecho con 💖 en <span class="footer__span">NUCBAZAPPI</span>
+    </p>
+  </footer>
+  <!-- Carrito de compras  -->
+  <div class="cart" id="cart">
+    <span class="btn btn--close" id="close">X</span>
+    <span class="cart__heading">Tus Productos:</span>
+    <div class="cart__main">
+      <!--<div class="card card--cart box-shadow">
+          <img
+            class="card__img"
+            src="./img/PhotoMenu.png"
+            alt="pizza recomendada"
+          />
+          <div class="card__info">
+            <p class="card__name">Bennzianna</p>
+            <p class="card__description">La mas completa</p>
+            <p class="card__price gradient-text">$ 3650</p>
+          </div>
+          <div class="card__buttons">
+            <button class="btn btn--cart">-</button>
+            <span class="card__quantity">1</span>
+            <button class="btn btn--cart">+</button>
+          </div>
+        </div>-->
+    </div>
+    <div class="cart-total">
+      <p id="total-p">Total:</p>
+      <span class="total"> 0.00 $</span>
+    </div>
+    <div class="btn-contain">
+      <button class="btn-buy btn">Comprar</button>
+      <button class="btn-delete btn">Vaciar carrito</button>
+    </div>
+    
+  </div>
+  <div class="add-modal"></div>
+  </div>
 
-            <div class="recommended-card">
-                <img src="./images/recommended/Tronco-Pizza.png" alt="Recommended-Product">
-                <div class="description-container">
-                    <h3 class="tittle-recommended-card">Tronco-Pizza</h3>
-                    <p class="description-recommended-card">Para todo el día</p>
-                    <p class="price-recommended-card">$ 870</p>
-                </div>
-                <button class="add-btn">Agregar</button>
-            </div>
-
-            <div class="recommended-card">
-                <img src="./images/recommended/Papas-Provenzal.png" alt="Recommended-Product">
-                <div class="description-container">
-                    <h3 class="tittle-recommended-card">Papas | Provenzal</h3>
-                    <p class="description-recommended-card">Van como piña</p>
-                    <p class="price-recommended-card">$ 360</p>
-                </div>
-                <button class="add-btn">Agregar</button>
-            </div>
-        </div>       
-    </section>
-
-    <section class="section-container">
-        <div class="categories">
-            <div >
-                <h2 class="categories-tittle">Categorías</h2>
-            </div>
-            <div class="categories-card-container">
-                    <div class="categories-card">
-                        <img src="images/categories/pizza 2.png" alt="Populares">
-                        <h3 class="categories-card-tittle">Populares</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-    
-                    <div class="categories-card">
-                        <img src="images/categories/image 34 (1).png" alt="Pizzas">
-                        <h3 class="categories-card-tittle">Pizzas</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-    
-                    <div class="categories-card">
-                        <img src="images/categories/burger 1.png" alt="Burgers">
-                        <h3 class="categories-card-tittle">Hamburguesas</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-    
-                    <div class="categories-card">
-                        <img src="images/categories/fries 2.png" alt="Napapuki">
-                        <h3 class="categories-card-tittle">Napapuki</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-    
-                    <div class="categories-card">
-                        <img src="images/categories/buritto 1.png" alt="Wraps">
-                        <h3 class="categories-card-tittle">Wraps</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-    
-                    <div class="categories-card">
-                        <img src="images/categories/taco 1.png" alt="Tacos">
-                        <h3 class="categories-card-tittle">Mexican Food</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-    
-                    <div class="categories-card">
-                        <img src="images/categories/float 1.png" alt="Batidos">
-                        <h3 class="categories-card-tittle">Batidos</h3>
-                        <span class="categories-detail"></span>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="seccion-lista-pedis" id="lista_pedis">
-    <h2>Los mas popular</h2>
-    <div class="container-cards">
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>La Mr.Pit</h3>
-            <h4>Solo para expertos</h4>
-            <p>$ 350</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>¡Q' Jamone!</h3>
-            <h4>c/jamon crudo</h4>
-            <p>$ 350</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>La Charly Garcia</h3>
-            <h4>¡BASTA!</h4>
-            <p>$ 380</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>La Maradona</h3>
-            <h4>¡Eterna!</h4>
-            <p>$ 450</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>Picantovich</h3>
-            <h4>Pica 2 veces</h4>
-            <p>$ 750</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>La Hasbulla</h3>
-            <h4>En horno al 1</h4>
-            <p>$ 990</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>Leo Messi</h3>
-            <h4>¡De pie señores!</h4>
-            <p>$ 10</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Pizza">
-            <h3>Nick Gi</h3>
-            <h4>La que desaparece</h4>
-            <p>$ Gratis</p>
-            <button>Agregar</button>
-        </div>
-    </div>
-</section> 
-    <section class="seccion-hamburguesas" id="lista_hamburguesas">
-    <h2>Hamburguesas</h2>
-    <div class="container-cards">
-        <div class="card">
-            <img src="" alt="Hamburguesa">
-            <h3>Bohemian</h3>
-            <h4>Clasico</h4>
-            <p>$ 900</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Hamburguesa">
-            <h3>Gordon</h3>
-            <h4>Triple carne</h4>
-            <p>$ 950</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Hamburguesa">
-            <h3>Mission</h3>
-            <h4>Pollo y Queso</h4>
-            <p>$ 800</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Hamburguesa">
-            <h3>Hulk</h3>
-            <h>Veggie</h4>
-            <p>$ 700</p>
-            <button>Agregar</button>
-        </div>
-    </div>
-</section>
-<section class="seccion-napapuki" id="lista_napapuki">
-    <h2>Napapuki</h2>
-    <div class="container-cards">
-        <div class="card">
-            <img src="" alt="Sin Stock">
-            <h3>Lo sentimos, Sin Stock</h3>
-        </div>
-    </div>
-</section>
-<section class="seccion-wraps" id="lista_wraps">
-    <h2>Wraps</h2>
-    <div class="container-cards">
-        <div class="card">
-            <img src="" alt="Sin Stock">
-            <h3>Lo sentimos, Sin Stock</h3>
-        </div>
-    </div>
-</section>
-<section class="seccion-mexican" id="lista_mexican">
-    <h2>Mexican Food</h2>
-    <div class="container-cards">
-        <div class="card">
-            <img src="" alt="mexican">
-            <h3>Tacos</h3>
-            <h4>Birria Taco</h4>
-            <p>$ 900</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="mexican">
-            <h3>Montaditos</h3>
-            <h4>Chingones</h4>
-            <p>$ 900</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="mexican">
-            <h3>Burrito</h3>
-            <h4>Mega Burrito</h4>
-            <p>$ 950</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="mexican">
-            <h3>Enchiladas</h3>
-            <h>Picante</h4>
-            <p>$ 900</p>
-            <button>Agregar</button>
-        </div>
-    </div>
-</section>
-<section class="seccion-batidos" id="lista_batidos">
-    <h2>Batidos</h2>
-    <div class="container-cards">
-        <div class="card">
-            <img src="" alt="Batidos">
-            <h3>Madonna</h3>
-            <h4>Queen</h4>
-            <p>$ 250</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Batidos">
-            <h3>Britney</h3>
-            <h4>Dirty</h4>
-            <p>$ 250</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Batidos">
-            <h3>Taylor</h3>
-            <h4>Fresa</h4>
-            <p>$ 250</p>
-            <button>Agregar</button>
-        </div>
-        <div class="card">
-            <img src="" alt="Batidos">
-            <h3>Dua</h3>
-            <h>Sweet</h4>
-            <p>$ 250</p>
-            <button>Agregar</button>
-        </div>
-    </div>
-</section>
-</main>
-<script src="./js/main.js"></script>
-<script src="./js/data.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
 </body>
+
 </html>
