@@ -342,7 +342,7 @@ const completeBuy = () => {
 const deleteCart = () => {
   completeCartAction(
     "¿Está seguro de que desea vaciar el carrito?",
-    "Usted a vaciado el carrito"
+    "Usted vació el carrito"
   );
 };
 
