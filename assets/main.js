@@ -173,7 +173,7 @@ const renderCartProduct = (cartProduct) => {
 const renderCart = () => {
   // si el carrito esta vacio muestra un msg
   if (!cart.length) {
-    productsCartStorage.innerHTML = `<p class="empty-msg"> Su carrito esta vacio :( </p>`;
+    productsCartStorage.innerHTML = `<p class="empty-msg"> Su carrito esta vacio </p>`;
     return;
   }
   // renderiza los productos que hay
@@ -301,11 +301,6 @@ const handleMinusBtnEvent = (id) => {
   substractProductUnit(existingCartProduct);
 };
 
-
-
-
-
-
 const handleQuantity = (e) => {
   if (e.target.classList.contains("down")) {
     handleMinusBtnEvent(e.target.dataset.id);
@@ -315,14 +310,12 @@ const handleQuantity = (e) => {
   checkCartState();
 };
 
-
-
 const resetCartItems = () => {
   cart = [];
   checkCartState();
 };
 
-//
+
 const completeCartAction = (confirmMsg, successMsg) => {
   if (!cart.length) return;
   if (window.confirm(confirmMsg)) {
@@ -330,8 +323,8 @@ const completeCartAction = (confirmMsg, successMsg) => {
     alert(successMsg);
   }
 };
-//
-//
+
+
 const completeBuy = () => {
   completeCartAction(
     "¿Desea confirmar su compra?",
@@ -339,12 +332,14 @@ const completeBuy = () => {
   );
 };
 
+
 const deleteCart = () => {
   completeCartAction(
     "¿Está seguro de que desea vaciar el carrito?",
-    "Usted a vaciado el carrito"
+    "Usted vacio el carrito"
   );
 };
+
 
 const init = () => {
   renderProducts();
